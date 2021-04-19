@@ -57,9 +57,7 @@ const AboutPage = () => {
           );
         })}
       </div>
-      <p ref={ref} className="scrollToHere">
-        [1] ...
-      </p>
+
     </Layout>
   );
 };
