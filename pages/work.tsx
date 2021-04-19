@@ -1,7 +1,6 @@
-import Link from "next/link";
 import Layout from "../components/Layout";
 import Image from "next/image";
-import { createRef, useEffect, useRef } from "react";
+import { createRef, useEffect } from "react";
 
 const AboutPage = () => {
   const ref = createRef() as any;
