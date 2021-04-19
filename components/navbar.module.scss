@@ -1,0 +1,25 @@
+.container {
+  height: auto;
+  color: grey;
+  flex: 1;
+  padding-top:3rem;
+  min-width:180px;
+  border-right:1px solid black;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+.menuItem {
+  margin-bottom: 0.5rem;
+  a {
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+.menuItem:hover {
+  color: #0c0;
+  cursor: crosshair;
+}
