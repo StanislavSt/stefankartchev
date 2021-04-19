@@ -68,8 +68,8 @@ const HomePage = () => {
               <Image
                 quality={70}
                 src={`/images/${img.name}.jpg`}
-                height={img.height}
-                width={img.width}
+                height={Math.random() * (750 - 350) + 350}
+                width={Math.random() * (750 - 350) + 350}
                 objectFit="cover"
               />
             </div>
