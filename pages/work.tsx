@@ -1,6 +1,10 @@
 import Layout from "../components/Layout";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
+const Pixi = dynamic(() => import("../components/pixi"), {
+  ssr: false,
+});
 const AboutPage = () => {
   const getRandomPosition = () => {
     const top = Math.floor(Math.random() * 60);
@@ -15,6 +19,7 @@ const AboutPage = () => {
   const images = ["ambivalence", "luxus", "miscible", "rest"];
   return (
     <Layout title="stefankartchev Work">
+      <Pixi/>
       <div className="imagesContainer">
         {images.map((img) => (
           <div className="imgContainer" style={getRandomPosition()}>
