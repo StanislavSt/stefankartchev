@@ -1,16 +1,15 @@
 .container {
-  height: auto;
-  min-height: 96vh;
-  color: grey;
-  flex: 1;
-  padding-top:3rem;
-  min-width:180px;
-  border-right:1px solid black;
+  padding: 0 10px;
 }
 .menu {
   display: flex;
-  flex-direction: column;
-  padding-left: 2rem;
+  justify-content: space-between;
+}
+.rightSide {
+  display: flex;
+  .menuItem {
+    margin-left: 2rem;
+  }
 }
 .menuItem {
   margin-bottom: 0.5rem;

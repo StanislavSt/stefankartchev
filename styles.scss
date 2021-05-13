@@ -1,14 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap");
 body {
-  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-    "Arial", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  font-style: italic;
+  font-weight: 700;
   padding: 0;
   margin: 0 auto;
   // overflow: hidden;
 }
 #__next {
+  background-color: #5c5c5c;
 }
 .main {
-  display: flex;
   height: 100%;
 }
 .content {
@@ -21,6 +23,7 @@ a:hover,
 a:active {
   color: inherit;
   cursor: inherit;
+  text-decoration: none;
 }
 
 .drag {
@@ -35,4 +38,27 @@ a:active {
 .images-container {
   display: flex;
   flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  li {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: white;
+    list-style: none;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+}
+
+.imgContainer {
+  position: absolute;
 }
