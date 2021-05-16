@@ -25,8 +25,8 @@ const AboutPage = () => {
           <div className="imgContainer" style={getRandomPosition()}>
             <Image
               src={`/menu/${img}.png`}
-              width={400}
-              height={400}
+              width={600}
+              height={600}
               objectFit="contain"
             />
           </div>

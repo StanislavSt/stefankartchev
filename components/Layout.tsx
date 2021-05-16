@@ -9,7 +9,16 @@ type Props = {
 
 const Layout = ({ children, title = "This is the default title" }: Props) => (
   <div
-    style={{ backgroundColor: "#5c5c5c", height: "100%", minHeight: "100vh" }}
+    style={{
+      backgroundColor: "#5c5c5c",
+      height: "100%",
+      minHeight: "100vh",
+      background:
+        "url(" + `${require("../public/images/logo_black.png")}` + ")",
+      backgroundRepeat: "no-repeat",
+      backgroundSize:"contain",
+      backgroundPosition:"center"
+    }}
   >
     <Head>
       <title>{title}</title>
