@@ -177,6 +177,10 @@
       "file": "static/chunks/1.js"
     },
     {
+      "id": "./node_modules/pixi-projection/dist/pixi-projection.js",
+      "file": "static/chunks/1.js"
+    },
+    {
       "id": "./node_modules/pixi.js/lib/pixi.es.js",
       "file": "static/chunks/1.js"
     },
@@ -194,6 +198,10 @@
     },
     {
       "id": "./node_modules/resource-loader/dist/resource-loader.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./public/menu/rest.png",
       "file": "static/chunks/1.js"
     }
   ],
