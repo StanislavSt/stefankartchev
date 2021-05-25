@@ -9,7 +9,7 @@ node_modules
 # Dependency directories
 node_modules/
 
-next
+.next/
 # Logs
 npm-debug.log*
 yarn-debug.log*

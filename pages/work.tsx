@@ -1,7 +1,5 @@
 import Layout from "../components/Layout";
-import Image from "next/image";
 import dynamic from "next/dynamic";
-import Link from "next/link";
 
 const Pixi = dynamic(() => import("../components/pixi"), {
   ssr: false,
@@ -13,26 +11,26 @@ const AboutPage = () => {
 
   console.log(indexes);
 
-  const randomPositions = [
-    {
-      top: `${1}vh`,
-      left: `${12}vw`,
-    },
-    {
-      top: `${22}vh`,
-      left: `${55}vw`,
-    },
-    {
-      top: `${44}vh`,
-      left: `${41}vw`,
-    },
-    {
-      top: `${45}vh`,
-      left: `${22}vw`,
-    },
-  ];
+  // const randomPositions = [
+  //   {
+  //     top: `${1}vh`,
+  //     left: `${12}vw`,
+  //   },
+  //   {
+  //     top: `${22}vh`,
+  //     left: `${55}vw`,
+  //   },
+  //   {
+  //     top: `${44}vh`,
+  //     left: `${41}vw`,
+  //   },
+  //   {
+  //     top: `${45}vh`,
+  //     left: `${22}vw`,
+  //   },
+  // ];
 
-  const images = ["ambivalence", "luxus", "miscible", "rest"];
+  // const images = ["ambivalence", "luxus", "miscible", "rest"];
 
   return (
     <Layout title="stefankartchev Work">
