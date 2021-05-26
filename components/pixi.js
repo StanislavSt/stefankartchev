@@ -4,6 +4,8 @@ import * as PIXI from "pixi.js";
 window.PIXI = PIXI;
 require("pixi-projection");
 import img from "../public/menu/rest.png";
+import img2 from "../public/menu/miscible.png";
+
 
 const getId = () => document.getElementById("myel");
 
@@ -16,6 +18,37 @@ export default function Pixi() {
   const w = app.screen.width / 2;
   const h = app.screen.height / 2;
 
+  function createSprite(img, squares) {
+    const quad = squares.map((s) => s.position);
+
+    // add sprite itself
+    const containerSprite = new window.PIXI.projection.Sprite2s(
+      PIXI.Texture.from(img)
+    );
+    containerSprite.anchor.set(0.5);
+
+    app.stage.addChild(containerSprite);
+    squares.forEach((s) => {
+      app.stage.addChild(s);
+    });
+
+    // Listen for animate update
+    app.ticker.add((delta) => {
+      containerSprite.proj.mapBilinearSprite(containerSprite, quad);
+    });
+
+    squares.forEach((s) => {
+      addInteraction(s);
+    });
+
+    // let us add sprite to make it more funny
+
+    const bunny = new window.PIXI.projection.Sprite2s(PIXI.Texture.from(img));
+    bunny.anchor.set(0.5);
+    containerSprite.addChild(bunny);
+    return bunny;
+  }
+
   function createSquare(x, y) {
     const square = new PIXI.Sprite(PIXI.Texture.WHITE);
     square.tint = 0xff0000;
@@ -26,53 +59,34 @@ export default function Pixi() {
   }
 
   const squares = [
-    createSquare(w - 150, h - 150),
-    createSquare(w + 150, h - 150),
+    createSquare(w - 150, 300),
+    createSquare(w + 150, 300),
     createSquare(w + 150, h + 150),
     createSquare(w - 150, h + 150),
   ];
+  const squares2 = [
+    createSquare(150, h - 150),
+    createSquare(650, h - 150),
+    createSquare(650, 1000),
+    createSquare(150, 1000),
+  ];
 
-  const quad = squares.map((s) => s.position);
+  const bunny = createSprite(img2, squares);
+  const bunny2 = createSprite(img, squares2);
 
-  // add sprite itself
-  const containerSprite = new window.PIXI.projection.Sprite2s(
-    PIXI.Texture.from(img)
-  );
-  containerSprite.anchor.set(0.5);
-
-  app.stage.addChild(containerSprite);
-  squares.forEach((s) => {
-    app.stage.addChild(s);
-  });
-
-  // Listen for animate update
-  app.ticker.add((delta) => {
-    containerSprite.proj.mapBilinearSprite(containerSprite, quad);
-  });
-
-  squares.forEach((s) => {
-    addInteraction(s);
-  });
-
-  // let us add sprite to make it more funny
-
-  const bunny = new window.PIXI.projection.Sprite2s(PIXI.Texture.from(img));
-  bunny.anchor.set(0.5);
-  containerSprite.addChild(bunny);
 
   addInteraction(bunny);
+  addInteraction(bunny2);
 
   // === INTERACTION CODE  ===
 
   function toggle(obj) {}
 
   function snap(obj) {
-    if (obj === bunny) {
-      obj.position.set(0);
-    } else {
-      obj.position.x = Math.min(Math.max(obj.position.x, 0), app.screen.width);
-      obj.position.y = Math.min(Math.max(obj.position.y, 0), app.screen.height);
-    }
+    // if (obj === bunny) {
+
+    obj.position.x = Math.min(Math.max(obj.position.x, 0), app.screen.width);
+    obj.position.y = Math.min(Math.max(obj.position.y, 0), app.screen.height);
   }
 
   function addInteraction(obj) {
@@ -81,7 +95,12 @@ export default function Pixi() {
       .on("pointerdown", onDragStart)
       .on("pointerup", onDragEnd)
       .on("pointerupoutside", onDragEnd)
-      .on("pointermove", onDragMove);
+      // .on("pointermove", onDragMove)
+      .on("mouseover", onMouseOver);
+  }
+
+  function onMouseOver(event){
+    console.log(event.currentTarget)
   }
 
   function onDragStart(event) {
@@ -109,7 +128,8 @@ export default function Pixi() {
 
   function onDragMove(event) {
     const obj = event.currentTarget;
-    if (!obj.dragging) return;
+    // console.log(event.currentTarget)
+    // if (!obj.dragging) return;
     const data = obj.dragData; // it can be different pointer!
     if (obj.dragging === 1) {
       // click or drag?
@@ -138,6 +158,11 @@ export default function Pixi() {
         );
       }
     }
+
+    obj.position.set(
+      obj.dragObjStart.x + (100),
+      obj.dragObjStart.y + (100)
+    );
   }
 
   const canvasRef = useRef(null);
