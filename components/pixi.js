@@ -61,11 +61,17 @@ export default function Pixi({ getLink }) {
   }
 
   const squares = [
-    createSquare(w - 150, 300),
-    createSquare(w + 150, 300),
-    createSquare(w + 150, h + 150),
-    createSquare(w - 150, h + 150),
+    createSquare(w + 444, 300),
+    createSquare(w + 888, 300),
+    createSquare(w + 888, h + 255),
+    createSquare(w + 444, h + 255),
   ];
+
+  const smaller = (n1, n2) => {
+    if (n1 > 0) return n1;
+    return n2;
+  };
+
   const squares2 = [
     createSquare(150, h + 144),
     createSquare(650, h + 144),
@@ -73,10 +79,10 @@ export default function Pixi({ getLink }) {
     createSquare(150, h + 611),
   ];
   const squares3 = [
-    createSquare(511, 111),
-    createSquare(811, 111),
-    createSquare(811, 655),
-    createSquare(511, 655),
+    createSquare(smaller(w - 333, 110), 111),
+    createSquare(smaller(w - 1, 444), 111),
+    createSquare(smaller(w - 1, 444), 655),
+    createSquare(smaller(w - 333, 110), 655),
   ];
 
   const bunny = createSprite(img2, squares);
@@ -106,8 +112,8 @@ export default function Pixi({ getLink }) {
       .on("pointerdown", onDragStart)
       .on("pointerup", onDragEnd)
       .on("pointerupoutside", onDragEnd)
-      .on("pointermove", onDragMove);
-    // .on("mouseover", onMouseOver)
+      .on("pointermove", onDragMove)
+      .on("mouseover", onMouseOver);
     // .on("click", onClick);
   }
 
@@ -119,7 +125,14 @@ export default function Pixi({ getLink }) {
   }
 
   function onMouseOver(event) {
-    // console.log(event.currentTarget)
+    if (event.currentTarget.texture.textureCacheIds[0]) {
+      if (
+        event.currentTarget.texture.textureCacheIds[0].includes("ambivalence")
+      )
+        console.log("ambivalence");
+      if (event.currentTarget.texture.textureCacheIds[0].includes("rest"))
+        console.log("rest");
+    }
   }
 
   function onDragStart(event) {
