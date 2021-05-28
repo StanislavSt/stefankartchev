@@ -1,5 +1,11 @@
+import Layout from "../components/Layout";
+
 const AmbivalencePage = () => {
-  return <p>Hello from ambivalence</p>;
+  return (
+    <Layout title="Ambivalence">
+      <p>Hello from ambivalence</p>
+    </Layout>
+  );
 };
 
 export default AmbivalencePage;

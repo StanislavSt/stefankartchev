@@ -4,12 +4,12 @@ import * as PIXI from "pixi.js";
 window.PIXI = PIXI;
 require("pixi-projection");
 import img from "../public/menu/rest.png";
-import img2 from "../public/menu/miscible.png";
-
+import img2 from "../public/menu/ambivalence.png";
+import img3 from "../public/menu/luxus.png";
 
 const getId = () => document.getElementById("myel");
 
-export default function Pixi() {
+export default function Pixi({ getLink }) {
   const app = new PIXI.Application({
     transparent: true,
     resizeTo: window,
@@ -51,7 +51,9 @@ export default function Pixi() {
 
   function createSquare(x, y) {
     const square = new PIXI.Sprite(PIXI.Texture.WHITE);
-    square.tint = 0xff0000;
+    square.height = 8;
+    square.width = 8;
+    square.tint = 0xffaacc;
     square.factor = 1;
     square.anchor.set(0.5);
     square.position.set(x, y);
@@ -65,28 +67,37 @@ export default function Pixi() {
     createSquare(w - 150, h + 150),
   ];
   const squares2 = [
-    createSquare(150, h - 150),
-    createSquare(650, h - 150),
-    createSquare(650, 1000),
-    createSquare(150, 1000),
+    createSquare(150, h + 144),
+    createSquare(650, h + 144),
+    createSquare(650, h + 611),
+    createSquare(150, h + 611),
+  ];
+  const squares3 = [
+    createSquare(511, 111),
+    createSquare(811, 111),
+    createSquare(811, 655),
+    createSquare(511, 655),
   ];
 
   const bunny = createSprite(img2, squares);
   const bunny2 = createSprite(img, squares2);
-
+  const bunny3 = createSprite(img3, squares3);
 
   addInteraction(bunny);
   addInteraction(bunny2);
+  addInteraction(bunny3);
 
   // === INTERACTION CODE  ===
 
   function toggle(obj) {}
 
   function snap(obj) {
-    // if (obj === bunny) {
-
-    obj.position.x = Math.min(Math.max(obj.position.x, 0), app.screen.width);
-    obj.position.y = Math.min(Math.max(obj.position.y, 0), app.screen.height);
+    if (obj === bunny) {
+      obj.position.set(0);
+    } else {
+      obj.position.x = Math.min(Math.max(obj.position.x, 0), app.screen.width);
+      obj.position.y = Math.min(Math.max(obj.position.y, 0), app.screen.height);
+    }
   }
 
   function addInteraction(obj) {
@@ -95,16 +106,25 @@ export default function Pixi() {
       .on("pointerdown", onDragStart)
       .on("pointerup", onDragEnd)
       .on("pointerupoutside", onDragEnd)
-      // .on("pointermove", onDragMove)
-      .on("mouseover", onMouseOver);
+      .on("pointermove", onDragMove);
+    // .on("mouseover", onMouseOver)
+    // .on("click", onClick);
   }
 
-  function onMouseOver(event){
-    console.log(event.currentTarget)
+  function onClick(event) {
+    if (event.currentTarget.texture.textureCacheIds[0].includes("ambivalence"))
+      getLink("ambivalence");
+    if (event.currentTarget.texture.textureCacheIds[0].includes("rest"))
+      getLink("rest");
+  }
+
+  function onMouseOver(event) {
+    // console.log(event.currentTarget)
   }
 
   function onDragStart(event) {
     const obj = event.currentTarget;
+    console.log(event.currentTarget);
     obj.dragData = event.data;
     obj.dragging = 1;
     obj.dragPointerStart = event.data.getLocalPosition(obj.parent);
@@ -128,8 +148,7 @@ export default function Pixi() {
 
   function onDragMove(event) {
     const obj = event.currentTarget;
-    // console.log(event.currentTarget)
-    // if (!obj.dragging) return;
+    if (!obj.dragging) return;
     const data = obj.dragData; // it can be different pointer!
     if (obj.dragging === 1) {
       // click or drag?
@@ -146,10 +165,10 @@ export default function Pixi() {
       const dragPointerEnd = data.getLocalPosition(obj.parent);
 
       if (
-        dragPointerEnd.x >= -2000 &&
-        dragPointerEnd.x <= 2000 &&
-        dragPointerEnd.y >= -2000 &&
-        dragPointerEnd.y <= 2000
+        dragPointerEnd.x >= -2500 &&
+        dragPointerEnd.x <= 2500 &&
+        dragPointerEnd.y >= -2500 &&
+        dragPointerEnd.y <= 2500
       ) {
         // DRAG only if its not too far away, and its not NaN
         obj.position.set(
@@ -158,11 +177,6 @@ export default function Pixi() {
         );
       }
     }
-
-    obj.position.set(
-      obj.dragObjStart.x + (100),
-      obj.dragObjStart.y + (100)
-    );
   }
 
   const canvasRef = useRef(null);
@@ -170,10 +184,5 @@ export default function Pixi() {
     const container = getId();
     container.appendChild(app.view);
   }, []);
-  return (
-    <div
-      id="myel"
-      // style={{ position: "absolute" }}
-    ></div>
-  );
+  return <div id="myel" style={{ position: "absolute" }}></div>;
 }
