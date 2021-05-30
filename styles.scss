@@ -5,15 +5,15 @@ body {
   font-weight: 700;
   padding: 0;
   margin: 0 auto;
-  overflow:hidden;
+  overflow: hidden;
 
   // overflow: hidden;
 }
 #__next {
   background-color: #5c5c5c;
 }
-canvas{
-  overflow:hidden;
+canvas {
+  overflow: hidden;
 }
 .main {
   height: 100%;
@@ -66,4 +66,112 @@ a:active {
 
 .imgContainer {
   position: absolute;
+}
+
+.tooltip span {
+  display: none;
+}
+.tooltip:hover span {
+  display: block;
+  position: fixed;
+  overflow: hidden;
+}
+
+.ambivalence {
+  margin: 5px;
+  height: 97vh;
+  text-align: right;
+  position: relative;
+}
+
+.collection {
+  width: 101%;
+  margin-left: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 280px;
+  position: absolute;
+  bottom: 0;
+  transition: all 1s;
+}
+
+.ambImageHover {
+  max-height: 1900px;
+  max-width: 1900px;
+  transition: all 1s;
+}
+
+.hover {
+  background-color: black;
+  overflow-x: scroll;
+  height: 101vh;
+  overflow-y: hidden;
+  transition: all 1s;
+  .images {
+    width: 100vw;
+  }
+  .ambImage {
+    max-height: 100vh;
+    max-width: 2000px;
+    transition: all 1s;
+  }
+  .gif {
+    max-height: 15vh;
+    max-width: 15vw;
+    right: 32.5%;
+    top: 1.5%;
+    transition: all 1s;
+  }
+  .gif2 {
+    max-height: 15vh;
+    max-width: 15vw;
+    top: 1.5%;
+    right: 81.5%;
+    transition: all 1s;
+  }
+}
+.ambImage {
+  max-height: 380px;
+  max-width: 380px;
+  transition: all 1s;
+}
+
+.imgGif {
+  position: relative;
+}
+
+.gif {
+  max-height: 45px;
+  max-width: 45px;
+  position: absolute;
+  right: 32.5%;
+  top: 1.5%;
+  transition: all 1s;
+}
+.gif2 {
+  max-height: 45px;
+  max-width: 45px;
+  position: absolute;
+  top: 1.5%;
+  right: 81.5%;
+  transition: all 1s;
+}
+
+.clickMe {
+  position: absolute;
+  bottom: 310px;
+  font-size: 45px;
+}
+.closeMe {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  font-size: 45px;
+  z-index: 10;
+}
+
+.images {
+  display: flex;
 }

@@ -9,7 +9,7 @@ import img3 from "../public/menu/luxus.png";
 
 const getId = () => document.getElementById("myel");
 
-export default function Pixi({ getLink }) {
+export default function Pixi({ getLink, getHoverName }) {
   const app = new PIXI.Application({
     transparent: true,
     resizeTo: window,
@@ -113,15 +113,19 @@ export default function Pixi({ getLink }) {
       .on("pointerup", onDragEnd)
       .on("pointerupoutside", onDragEnd)
       .on("pointermove", onDragMove)
-      .on("mouseover", onMouseOver);
-    // .on("click", onClick);
+      .on("mouseover", onMouseOver)
+      .on("click", onClick);
   }
 
   function onClick(event) {
-    if (event.currentTarget.texture.textureCacheIds[0].includes("ambivalence"))
-      getLink("ambivalence");
-    if (event.currentTarget.texture.textureCacheIds[0].includes("rest"))
-      getLink("rest");
+    if (event.currentTarget.texture.textureCacheIds[0]) {
+      if (
+        event.currentTarget.texture.textureCacheIds[0].includes("ambivalence")
+      )
+        getLink("ambivalence");
+      if (event.currentTarget.texture.textureCacheIds[0].includes("rest"))
+        getLink("rest");
+    }
   }
 
   function onMouseOver(event) {
@@ -132,6 +136,8 @@ export default function Pixi({ getLink }) {
         console.log("ambivalence");
       if (event.currentTarget.texture.textureCacheIds[0].includes("rest"))
         console.log("rest");
+      if (event.currentTarget.texture.textureCacheIds[0].includes("luxus"))
+        console.log("luxus");
     }
   }
 

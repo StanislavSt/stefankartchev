@@ -6,15 +6,26 @@ const Pixi = dynamic(() => import("../components/pixi"), {
   ssr: false,
 });
 
+// var tooltipSpan = window.document.getElementById("tooltip-span");
+
+// window.onmousemove = function (e: any) {
+//   var x = e.clientX,
+//     y = e.clientY;
+//   tooltipSpan!.style.top = y + 20 + "px";
+//   tooltipSpan!.style.left = x + 20 + "px";
+// };
+
 const AboutPage = () => {
   const router = useRouter();
   const handleRouter = (href: string) => {
     router.push(href);
   };
+  const handleHoverName = (name: string) => {};
 
   return (
     <Layout title="stefankartchev Work">
-      <Pixi getLink={handleRouter} />
+      <Pixi getLink={handleRouter} getHoverName={handleHoverName} />
+      <div id="tooltip-span" title="regular tooltip">Hover me</div>
       <div className="imagesContainer">
         {/* {images.map((img, index) => (
           <div className="imgContainer" style={randomPositions[indexes[index]]}>
