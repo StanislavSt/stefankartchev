@@ -20,7 +20,7 @@ const AboutPage = () => {
   const handleRouter = (href: string) => {
     router.push(href);
   };
-  const handleHoverName = (name: string) => {};
+  const handleHoverName = () => {};
 
   return (
     <Layout title="stefankartchev Work">
