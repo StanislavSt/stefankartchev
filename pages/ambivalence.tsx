@@ -46,10 +46,10 @@ const AmbivalencePage = () => {
           )}
           <div className="images">
             <div className="s">
-              <img className="ambImage" src={img}></img>
+              <img className="ambImage lazyload"  src={img}></img>
             </div>
             <div className="imgGif">
-              <img className="ambImage" src={img2}></img>
+              <img className="ambImage lazyload"  src={img2}></img>
               <img
                 className="gif2"
                 src="https://media.tenor.com/images/89c2fc544cebafa603f3cd75bff2964c/tenor.gif"
@@ -61,7 +61,7 @@ const AmbivalencePage = () => {
             </div>
 
             <div className="s">
-              <img className="ambImage" src={img3}></img>
+              <img className="ambImage lazyload"  src={img3}></img>
             </div>
           </div>
         </div>
