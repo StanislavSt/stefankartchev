@@ -119,6 +119,11 @@ a:active {
     max-width: 2000px;
     transition: all 0.5s ease-out;
   }
+  .miscibleImage{
+    min-height: 102vh;
+    max-width: 6000px;
+    transition: all 0.5s ease-out;
+  }
   .gif {
     max-height: 18.5vh;
     max-width: 18.5vh;
@@ -137,6 +142,11 @@ a:active {
 .ambImage {
   max-height: 380px;
   max-width: 380px;
+  transition: all 0.5s ease-out;
+}
+.miscibleImage{
+  max-height: 920px;
+  max-width: 920px;
   transition: all 0.5s ease-out;
 }
 
