@@ -29,10 +29,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/ambivalence.js"
     ],
-    "/next/dist/pages/_error": [
+    "/work": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/next/dist/pages/_error.js"
+      "static/chunks/pages/work.js"
     ]
   },
   "ampFirstPages": []

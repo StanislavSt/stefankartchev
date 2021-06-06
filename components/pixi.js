@@ -1,6 +1,6 @@
 // pixi.tsx
 import { useEffect, useRef } from "react";
-import * as PIXI from "pixi.js";
+import * as PIXI from "pixi.js-legacy";
 window.PIXI = PIXI;
 require("pixi-projection");
 import img from "../public/menu/rest.png";

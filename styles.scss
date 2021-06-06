@@ -9,6 +9,9 @@ body {
 
   // overflow: hidden;
 }
+html{
+  scroll-behavior: smooth;
+}
 #__next {
   background-color: #5c5c5c;
 }
@@ -94,48 +97,47 @@ a:active {
   height: 280px;
   position: absolute;
   bottom: 0;
-  transition: all 1s;
+  transition: all 0.5s ease-out;
 }
 
 .ambImageHover {
   max-height: 1900px;
   max-width: 1900px;
-  transition: all 1s;
+  transition: all 0.5s ease-out;
 }
 
 .hover {
   background-color: black;
-  overflow-x: scroll;
+  overflow: hidden;
   height: 101vh;
-  overflow-y: hidden;
-  transition: all 1s;
+  transition: all 0.5s ease-out;
   .images {
     width: 100vw;
   }
   .ambImage {
     max-height: 100vh;
     max-width: 2000px;
-    transition: all 1s;
+    transition: all 0.5s ease-out;
   }
   .gif {
-    max-height: 15vh;
-    max-width: 15vw;
-    right: 32.5%;
-    top: 1.5%;
-    transition: all 1s;
+    max-height: 18.5vh;
+    max-width: 18.5vh;
+    right: 54.5%;
+    top: 1.9%;
+    transition: all 0.5s ease-out;
   }
   .gif2 {
-    max-height: 15vh;
-    max-width: 15vw;
-    top: 1.5%;
-    right: 81.5%;
-    transition: all 1s;
+    max-height: 18.5vh;
+    max-width:18.5vh;
+    top: 2.1%;
+    right: 80.5%;
+    transition: all 0.5s ease-out;
   }
 }
 .ambImage {
   max-height: 380px;
   max-width: 380px;
-  transition: all 1s;
+  transition: all 0.5s ease-out;
 }
 
 .imgGif {
@@ -148,7 +150,7 @@ a:active {
   position: absolute;
   right: 32.5%;
   top: 1.5%;
-  transition: all 1s;
+  transition: all 0.5s ease-out;
 }
 .gif2 {
   max-height: 45px;
@@ -156,7 +158,7 @@ a:active {
   position: absolute;
   top: 1.5%;
   right: 81.5%;
-  transition: all 1s;
+  transition: all 0.5s ease-out;
 }
 
 .clickMe {
