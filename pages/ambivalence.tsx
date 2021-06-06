@@ -16,22 +16,9 @@ const AmbivalencePage = () => {
     setActive(true);
   };
 
-  const scrollTo = () => {
-    // const el:any = document.getElementsByClassName('collection')
-    // console.log(el)
-    // el.scrollLeft = +1500
-  };
 
-  const handleMouseScroll = (
-    flavoursContainer: any,
-    flavoursScrollWidth: any
-  ) => {
-    self.setInterval(() => {
-      if (flavoursContainer!.scrollLeft !== flavoursScrollWidth) {
-        flavoursContainer!.scrollTo(flavoursContainer!.scrollLeft + 1, 0);
-      }
-    }, 11);
-  };
+
+
 
   const handleEnter = (px: number) => {
     const flavoursContainer = document.getElementById("myDiv");
