@@ -3,9 +3,6 @@ import Layout from "../components/Layout";
 
 const MisciblePage = () => {
   const img = require("../public/miscible/miscibleLineup.jpg");
-  const img2 = require("../public/ambivalence/ambivalence2.jpg");
-  const img3 = require("../public/ambivalence/ambivalence3.jpg");
-  const img4 = require("../public/ambivalence/try3.gif");
 
   const [collectionClass, setSollectionClass] = useState("collection");
   const [active, setActive] = useState(false);
@@ -70,7 +67,7 @@ const MisciblePage = () => {
         {active ? (
           <div
             className="closeMe"
-            style={{ color: "white" }}
+            style={{ color: "black" }}
             onClick={() => closeMe()}
           >
             X
@@ -81,6 +78,7 @@ const MisciblePage = () => {
         <div>Antwerp, Belgium</div>
         <div
           className={collectionClass}
+          style={{background:"linear-gradient(0deg, rgba(11,63,255,0.9542017490589986) 7%, rgba(93,99,101,1) 10%, rgba(255,255,255,1) 41%)"}}
           id="myDiv"
           // onMouseEnter={() => handleEnter()}
           onMouseLeave={() => handleLeave()}

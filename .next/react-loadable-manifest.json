@@ -1,290 +1,108 @@
 {
   "../components/pixi": [
     {
-      "id": "./components/pixi.js",
-      "file": "static/chunks/1.js"
+      "id": "5J4z",
+      "file": "static/chunks/6e22dc7a.3d5656c18f318097c2f4.js"
     },
     {
-      "id": "./node_modules/@pixi/canvas-display/dist/esm/canvas-display.js",
-      "file": "static/chunks/1.js"
+      "id": "dY3r",
+      "file": "static/chunks/6656e8de.bce80bbc3d2fc69535fb.js"
     },
     {
-      "id": "./node_modules/@pixi/canvas-extract/dist/esm/canvas-extract.js",
-      "file": "static/chunks/1.js"
+      "id": "1LAT",
+      "file": "static/chunks/ab5ff386.465c515fcc2e9d01f424.js"
     },
     {
-      "id": "./node_modules/@pixi/canvas-graphics/dist/esm/canvas-graphics.js",
-      "file": "static/chunks/1.js"
+      "id": "1eSL",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/canvas-mesh/dist/esm/canvas-mesh.js",
-      "file": "static/chunks/1.js"
+      "id": "4JlD",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/canvas-particles/dist/esm/canvas-particles.js",
-      "file": "static/chunks/1.js"
+      "id": "7AUU",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/canvas-prepare/dist/esm/canvas-prepare.js",
-      "file": "static/chunks/1.js"
+      "id": "BDh8",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/canvas-renderer/dist/esm/canvas-renderer.js",
-      "file": "static/chunks/1.js"
+      "id": "CpIl",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/canvas-sprite-tiling/dist/esm/canvas-sprite-tiling.js",
-      "file": "static/chunks/1.js"
+      "id": "DRCO",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/canvas-sprite/dist/esm/canvas-sprite.js",
-      "file": "static/chunks/1.js"
+      "id": "Dh0r",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/canvas-text/dist/esm/canvas-text.js",
-      "file": "static/chunks/1.js"
+      "id": "EZcd",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/compressed-textures/dist/esm/compressed-textures.js",
-      "file": "static/chunks/1.js"
+      "id": "IUqD",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/constants/dist/esm/constants.js",
-      "file": "static/chunks/1.js"
+      "id": "QmWs",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/core/dist/esm/core.js",
-      "file": "static/chunks/1.js"
+      "id": "Tihq",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/core/node_modules/@pixi/runner/dist/esm/runner.js",
-      "file": "static/chunks/1.js"
+      "id": "Un6Q",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/core/node_modules/@pixi/ticker/dist/esm/ticker.js",
-      "file": "static/chunks/1.js"
+      "id": "VmRL",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/display/dist/esm/display.js",
-      "file": "static/chunks/1.js"
+      "id": "Y0qV",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/graphics/dist/esm/graphics.js",
-      "file": "static/chunks/1.js"
+      "id": "kd2E",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/loaders/dist/esm/loaders.js",
-      "file": "static/chunks/1.js"
+      "id": "ntbh",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/math/dist/esm/math.js",
-      "file": "static/chunks/1.js"
+      "id": "pHy+",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/mesh-extras/dist/esm/mesh-extras.js",
-      "file": "static/chunks/1.js"
+      "id": "qWv5",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/mesh/dist/esm/mesh.js",
-      "file": "static/chunks/1.js"
+      "id": "s4NR",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/particles/dist/esm/particles.js",
-      "file": "static/chunks/1.js"
+      "id": "s5gZ",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/prepare/dist/esm/prepare.js",
-      "file": "static/chunks/1.js"
+      "id": "u62O",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/prepare/node_modules/@pixi/ticker/dist/esm/ticker.js",
-      "file": "static/chunks/1.js"
+      "id": "uhBA",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     },
     {
-      "id": "./node_modules/@pixi/settings/dist/esm/settings.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@pixi/sprite-tiling/dist/esm/sprite-tiling.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@pixi/sprite/dist/esm/sprite.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@pixi/text/dist/esm/text.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@pixi/utils/dist/esm/utils.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/earcut/src/earcut.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/eventemitter3/index.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/ismobilejs/esm/index.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/ismobilejs/esm/isMobile.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/mini-signals/lib/mini-signals.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/native-url/dist/index.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/next/dist/compiled/webpack/global.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/parse-uri/index.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi-projection/dist/pixi-projection.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/dist/esm/pixi-legacy.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/accessibility/dist/esm/accessibility.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/app/dist/esm/app.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/extract/dist/esm/extract.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/filter-alpha/dist/esm/filter-alpha.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/filter-blur/dist/esm/filter-blur.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/filter-color-matrix/dist/esm/filter-color-matrix.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/filter-displacement/dist/esm/filter-displacement.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/filter-fxaa/dist/esm/filter-fxaa.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/filter-noise/dist/esm/filter-noise.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/interaction/dist/esm/interaction.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/mixin-cache-as-bitmap/dist/esm/mixin-cache-as-bitmap.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/mixin-get-child-by-name/dist/esm/mixin-get-child-by-name.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/mixin-get-global-position/dist/esm/mixin-get-global-position.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/polyfill/dist/esm/polyfill.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/runner/dist/esm/runner.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/sprite-animated/dist/esm/sprite-animated.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/spritesheet/dist/esm/spritesheet.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/text-bitmap/dist/esm/text-bitmap.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/@pixi/ticker/dist/esm/ticker.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/pixi.js-legacy/node_modules/pixi.js/dist/esm/pixi.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/promise-polyfill/src/allSettled.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/promise-polyfill/src/finally.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/promise-polyfill/src/index.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/querystring-es3/decode.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/querystring-es3/encode.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/querystring-es3/index.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/resource-loader/dist/resource-loader.esm.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./public/menu/ambivalence.png",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./public/menu/luxus.png",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./public/menu/rest.png",
-      "file": "static/chunks/1.js"
-    }
-  ],
-  "./dev/noop": [
-    {
-      "id": "./node_modules/next/dist/client/dev/noop.js",
-      "file": "static/chunks/0.js"
+      "id": "z/+y",
+      "file": "static/chunks/18.4763f4254ca869525203.js"
     }
   ]
 }

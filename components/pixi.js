@@ -5,7 +5,7 @@ window.PIXI = PIXI;
 require("pixi-projection");
 import img from "../public/menu/rest.png";
 import img2 from "../public/menu/ambivalence.png";
-import img3 from "../public/menu/luxus.png";
+import img3 from "../public/menu/miscible.png";
 
 const getId = () => document.getElementById("myel");
 
@@ -86,11 +86,11 @@ export default function Pixi({ getLink, getHoverName }) {
   ];
 
   const bunny = createSprite(img2, squares);
-  const bunny2 = createSprite(img, squares2);
+  // const bunny2 = createSprite(img, squares2);
   const bunny3 = createSprite(img3, squares3);
 
   addInteraction(bunny);
-  addInteraction(bunny2);
+  // addInteraction(bunny2);
   addInteraction(bunny3);
 
   // === INTERACTION CODE  ===
@@ -123,8 +123,8 @@ export default function Pixi({ getLink, getHoverName }) {
         event.currentTarget.texture.textureCacheIds[0].includes("ambivalence")
       )
         getLink("ambivalence");
-      if (event.currentTarget.texture.textureCacheIds[0].includes("rest"))
-        getLink("rest");
+      if (event.currentTarget.texture.textureCacheIds[0].includes("miscible"))
+        getLink("miscible");
     }
   }
 
