@@ -17,7 +17,6 @@ const Layout = ({
   const img2 = require("../public/abBackground.jpg");
   const img3 = require("../public/miscible/miscibleBG.jpg");
 
-  console.log(img);
   return (
     <div
       style={{
