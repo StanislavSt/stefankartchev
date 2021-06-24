@@ -64,7 +64,42 @@ const MisciblePage = () => {
 
   return (
     <Layout title="Ambivalence" imgUrl="3">
-hello
+      <div className="ambivalence">
+        {active ? (
+          <div
+            className="closeMe"
+            style={{ color: "black" }}
+            onClick={() => closeMe()}
+          >
+            X
+          </div>
+        ) : null}
+        <div style={{ fontSize: "2.8rem" }}>Miscible Displacement</div>
+        <div>Bachelor Collection 2016</div>
+        <div>Antwerp, Belgium</div>
+        <div
+          className={collectionClass}
+          style={{background:"linear-gradient(0deg, rgba(22,16,225,1) 13%, rgba(93,99,101,1) 16%, rgba(255,255,255,1) 41%)"}}
+          id="myDiv"
+          // onMouseEnter={() => handleEnter()}
+          onMouseLeave={() => handleLeave()}
+          onMouseMove={(e) => handleMouseMove(e)}
+        >
+          {active ? null : (
+            <div
+              className="clickMe"
+              style={{ color: "white" }}
+              onClick={() => clickMe()}
+            >
+              ^
+            </div>
+          )}
+          <div className="images">
+              <img className="miscibleImage lazyload" data-src={img}></img>
+
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };
