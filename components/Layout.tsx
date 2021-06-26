@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 type Props = {
   children?: ReactNode;
   title?: string;
-  imgUrl?: "1" | "2" | "3";
+  imgUrl?: "1" | "2" | "3" | "4";
 };
 
 const Layout = ({
@@ -13,9 +13,10 @@ const Layout = ({
   title = "This is the default title",
   imgUrl = "1",
 }: Props) => {
-  const img = require("../public/images/logo_black.png");
+  const img = require("../public/images/logo_gradient.png");
   const img2 = require("../public/abBackground.jpg");
   const img3 = require("../public/miscible/miscibleBG.jpg");
+  const img4 = require("../public/images/logo_blurred.png");
 
   return (
     <div
@@ -25,11 +26,19 @@ const Layout = ({
         minHeight: "100vh",
         background:
           "url(" +
-          `${imgUrl === "1" ? img : imgUrl === "3" ? img3 : img2}` +
+          `${
+            imgUrl === "1"
+              ? img
+              : imgUrl === "3"
+              ? img3
+              : imgUrl === "4"
+              ? img4
+              : img2
+          }` +
           ")",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "10% 10%",
+        backgroundSize: "contain",
+        backgroundPosition: "50% 50%",
       }}
     >
       <Head>

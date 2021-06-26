@@ -2,299 +2,303 @@
   "../components/Ambivalence": [
     {
       "id": "./components/Ambivalence.tsx",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./components/Layout.tsx",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./components/Navbar.tsx",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./components/navbar.module.scss",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/arrayWithHoles.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/asyncToGenerator.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/construct.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/iterableToArray.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/getPrototypeOf.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/inherits.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/interopRequireDefault.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/isNativeReflectConstruct.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/iterableToArray.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/nonIterableRest.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/nonIterableSpread.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/setPrototypeOf.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/slicedToArray.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/toConsumableArray.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/typeof.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/regenerator/index.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/build/webpack/loaders/next-style-loader/runtime/injectStylesIntoStyleTag.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/client/link.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/client/normalize-trailing-slash.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/client/request-idle-callback.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/client/route-loader.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/client/router.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/client/use-intersection.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/client/with-router.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/compiled/css-loader/api.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/compiled/css-loader/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/cjs.js?!./node_modules/next/dist/compiled/resolve-url-loader/index.js?!./node_modules/next/dist/compiled/sass-loader/cjs.js?!./components/navbar.module.scss",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/amp-context.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/amp.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/head-manager-context.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/head.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/i18n/normalize-locale-path.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/mitt.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/router-context.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/router/router.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/router/utils/format-url.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/router/utils/get-asset-path-from-route.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/router/utils/is-dynamic.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/router/utils/parse-relative-url.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/router/utils/querystring.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/router/utils/resolve-rewrites-noop.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/router/utils/route-matcher.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/router/utils/route-regex.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/side-effect.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/lib/utils.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/dist/next-server/server/denormalize-page-path.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/head.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/link.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/next/router.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/react-is/cjs/react-is.development.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/react-is/index.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/regenerator-runtime/runtime.js",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./public/abBackground.jpg",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./public/ambivalence/ambivalence1.jpg",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./public/ambivalence/ambivalence2.jpg",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./public/ambivalence/ambivalence3.jpg",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./public/ambivalence/try3.gif",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     },
     {
-      "id": "./public/images/logo_black.png",
-      "file": "static/chunks/1.js"
+      "id": "./public/images/logo_blurred.png",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./public/images/logo_gradient.png",
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./public/miscible/miscibleBG.jpg",
-      "file": "static/chunks/1.js"
+      "file": "static/chunks/3.js"
     }
   ],
   "../components/Miscible": [
@@ -571,7 +575,11 @@
       "file": "static/chunks/2.js"
     },
     {
-      "id": "./public/images/logo_black.png",
+      "id": "./public/images/logo_blurred.png",
+      "file": "static/chunks/2.js"
+    },
+    {
+      "id": "./public/images/logo_gradient.png",
       "file": "static/chunks/2.js"
     },
     {
