@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/ambivalence": "pages/ambivalence.js",
-  "/work": "pages/work.js",
-  "/miscible": "pages/miscible.js"
+  "/miscible": "pages/miscible.js",
+  "/ambivalence": "pages/ambivalence.js"
 }
